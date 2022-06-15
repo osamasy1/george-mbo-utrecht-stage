@@ -1,0 +1,607 @@
+.container {
+  width: 75%;
+  margin: auto;
+}
+
+
+body {
+	background-color: whitesmoke;
+	background: fixed;
+	margin: 0 auto;
+	padding: 0;
+  line-height: 1.5;
+  font-family: var(--Mont);
+  color: black;
+}
+
+.hrlength {
+	margin: auto;
+	width: 88.5%;
+}
+
+/* SideNAV */
+
+.sidenav {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #111;
+	overflow-x: hidden;
+	transition: 0.5s;
+	padding-top: 60px;
+  }
+  
+  .sidenav a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #818181;
+	display: block;
+	transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+	color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+  }
+  
+  #main {
+	transition: margin-left .5s;
+	padding: 16px;
+	position: fixed;
+  }
+  
+  @media screen and (max-height: 450px) {
+	.sidenav {padding-top: 15px;}
+	.sidenav a {font-size: 18px;}
+  }
+
+  /* EndSideNavbar */
+
+/* carousel */
+
+/* End Carousel */
+
+
+#title {
+	text-align: center;
+	margin-top: 30px ;
+	margin-bottom: 30px ;
+	font-family: var(--Kaushan);
+}
+
+/* Reservation page style */
+#img{
+    opacity: 50%;
+
+}
+@font-face {
+	font-family: FontAwesome;
+	src: url("../font/fontawesome-webfontd41d.eot");
+}
+
+@font-face {
+	font-family: FontAwesome;
+	src: url("../font/fontawesome-webfontba72.eot");
+}
+
+@font-face {
+	font-family: FontAwesome;
+	src: url("../font/fontawesome-webfontba72.ttf");
+}
+
+@font-face {
+	font-family: FontAwesome;
+	src: url("../font/fontawesome-webfontba72.woff");
+}
+
+
+div.inner_content {
+	max-width: 8000px;
+	height: auto;
+	margin: auto;
+	margin: auto;
+  	width: 100%;
+
+}
+
+form.hr_book_form {
+	max-width: 1100px;
+	height: auto;
+	margin: 0 auto;
+}
+
+h2.form_head {
+	text-align: center;
+	color: black;
+	font-size: 30px;
+}
+
+span.book_icon:before {
+	content: '\f0ce';
+	font-family: FontAwesome;
+	margin-right: 13px;
+	font-size: 30px;
+	color: #505050;
+}
+
+p.form_slg {
+	text-align: center;
+	color: #505050;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+
+div.left {
+	float: left;
+	width: 50%;
+	height: auto;
+	padding: 20px;
+}
+
+
+
+input[type=text], input[type=email], input[type=number], input[type=date], input[type=time] {
+	width: 100%;
+	border: 1px solid #CCCCCC;
+	padding: 7px;
+	height: 40px;
+	background: #efefef;
+	border-radius: 4px;
+}
+
+textarea {
+	width: 100%;
+	background: #efefef;
+	border: 1px solid #ccc;
+	padding: 7px;
+	border-radius: 4px;
+	height: 280px;
+}
+
+input[type=submit].submit {
+	width: 100%;
+	background: black;
+	color: #fff;
+	padding: 7px;
+	height: 40px;
+	border: 1px solid black;
+	font-family: verdana;
+	font-size: 19px;
+	margin-top: 27px;
+	border-radius: 4px;
+}
+/* END Reservation page style */
+
+/* menu */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&family=Kaushan+Script&family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --Inter: 'Inter', sans-serif;
+    --Kaushan: 'Kaushan Script', cursive;
+    --Mont: 'Montserrat', sans-serif;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.menu{
+    margin: 2rem 0;
+}
+.menu-container{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+.img-menu{
+    width: 100%;
+    display: block;
+}
+
+.menu-head{
+    text-align: center;
+}
+.menu-head h2{
+    font-family: var(--Kaushan);
+    font-size: 2.6rem;
+}
+.menu-head p{
+    font-weight: 300;
+    padding: 1.8rem 0;
+}
+.menu-btns{
+    padding: 0.6rem 0;
+    display: flex;
+    justify-content: center;
+}
+.menu-btn{
+    font-family: var(--Inter);
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: 600;
+    background: none;
+    border: none;
+    color: black;
+    display: block;
+    margin: 0 1rem;
+    cursor: pointer;
+    outline: 0;
+    transition: opacity 0.4s ease-out;
+}
+.entire-menu{
+    font-family: var(--Inter);
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: 600;
+    background: none;
+    border: none;
+    color: black;
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    outline: 0;
+    top: 10px;
+}
+.menu-btn::after{
+    content: "";
+    display: block;
+    height: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    background:black;
+    margin-top: 0.5rem;
+    width: 0;
+    transition: width 0.4s ease-out;
+}
+.menu-btn:hover::after{
+    width: 100%;
+}
+.menu-btn:hover{
+    opacity: 0.8;
+}
+.active-btn{
+    color:grey;
+
+}
+.food-items{
+    margin: 2rem 0;
+}
+.food-item{
+    border-radius: 4px;
+    overflow: hidden;
+    background: #fff;
+    color: #000;
+    margin: 0.6rem 0;
+    box-shadow: 0 0 16px -4px rgba(0, 0, 0, 0.75);
+    animation: fadeIn 2s;
+}
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.food-img img{
+    border-radius: 4px;
+}
+.food-content{
+    padding: 1rem;
+}
+.food-name{
+    font-family: var(--Inter);
+    color: black;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.line{
+    width: 100px;
+    height: 3px;
+    background: grey;
+}
+.food-price{
+    padding: 0.4rem 0;
+    font-weight: 600;
+    font-size: 1.4rem;
+    opacity: 0.8;
+}
+.rating{
+    display: flex;
+    list-style: none;
+}
+.rating .fa-star{
+    margin-right: 0.4rem;
+    color: #44355b;
+}
+.category{
+    padding-top: 0.2rem;
+    font-size: 1rem;
+    font-weight: 800;
+    font-family: var(--Inter);
+}
+.category span{
+    font-weight: 500;
+}
+
+@media screen and (min-width: 600px){
+    .food-item{
+        display: grid;
+        grid-template-columns: 25% auto;
+        align-items: center;
+        padding: 1rem;
+        column-gap: 1rem;
+    }
+    .food-content{
+        padding: 0;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .menu-head p{
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .menu-head p{
+        width: 50%;
+    }
+    .food-items{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+}
+
+/* End Menu */
+
+/* Team/Careers */
+  
+@import 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css';
+@import 'https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css';
+@import 'https://fonts.googleapis.com/css?family=Raleway:100,600';
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300';
+ .section-title h2 {
+  text-transform: uppercase;
+}
+.section-title {
+  margin: 3% 0;
+}
+.section-title p {
+  text-transform: uppercase;
+  font-weight:bold;
+}
+.single-team{
+  padding-bottom: 70px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  box-shadow:5px 5px 15px #000;
+}
+
+.team-img{
+  position: relative;
+  z-index: 5;
+  overflow: hidden;
+}
+.team-img img{
+  width: 100%;
+  transition: .3s;
+}
+.single-team:hover .team-img img {
+  transform: scale(1.1);
+}
+.team-content {
+  height: 80px;
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  overflow: hidden;
+  bottom: 0;
+  transition: all .4s;
+  background: black;
+  z-index:5;
+}
+.single-team:hover .team-content{
+  height: 150px;
+}
+.team-info {
+  padding: 5px 20px 5px 20px;
+  transition: all .5s;
+}
+.single-team:hover .team-content{
+  background: white;
+}
+.single-team .team-content .team-info h3 {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 16px;
+  margin: 5px;
+}
+.single-team:hover .team-info h3{
+  color: black;
+}
+.team-info p {
+  margin-top: 15px;
+  color: black;
+}
+.single-team-text p{
+  margin-top: 5px;
+}
+.team-text {
+  color: black;
+  padding: 0 10px 5px;
+}
+.link-area
+{
+  position:fixed;
+  bottom:20px;
+  left:20px;  
+  padding:15px;
+  border-radius:40px;
+  background:tomato;
+  z-index: 10;
+}
+.link-area a
+{
+  text-decoration:none;
+  color:#fff;
+  font-size:25px;
+}
+      
+
+/* End Team/Careers */
+
+/* Corona */
+.corona {
+	text-align: center;
+}
+/* End Corona */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+	text-align: center;
+	margin: auto;
+	border: black bold;
+}
+
+/* Management pagina */
+@import "compass/css3";
+ *, :before, :after {
+	 box-sizing: border-box;
+}
+ .unstyled {
+	 list-style: none;
+	 padding: 0;
+	 margin: 0;
+}
+ .unstyled a {
+	 text-decoration: none;
+}
+ .list-inline {
+	 overflow: hidden;
+}
+ .list-inline li {
+	 float: left;
+}
+ .header {
+	 position: absolute;
+	 left: 0;
+	 top: 0;
+	 bottom: 1;
+	 width: 165px;
+	 background: black;
+}
+.admintext {
+  text-align:center;
+  color: white;
+}
+ .main-nav ul {
+	 border-top: solid 1px #3c3735;
+}
+ .main-nav li {
+	 border-bottom: solid 1px #3c3735;
+}
+ .main-nav a {
+	 padding: 1.1em 0;
+	 color: #dfdbd9;
+	 font: 400 1.125em 'Source Sans Pro', Helvetica, Arial, sans-serif;
+	 text-align: center;
+	 text-transform: lowercase;
+}
+ .main-nav a:hover {
+	 color: #fff;
+}
+ .list-hover-slide li {
+	 position: relative;
+	 overflow: hidden;
+}
+ .list-hover-slide a {
+	 display: block;
+	 position: relative;
+	 z-index: 1;
+	 transition: 0.35s ease color;
+}
+ .list-hover-slide a:before {
+	 content: '';
+	 display: block;
+	 z-index: -1;
+	 position: absolute;
+	 left: -100%;
+	 top: 0;
+	 width: 100%;
+	 height: 100%;
+	 border-right: solid 5px white;
+	 background: #3c3735;
+	 transition: 0.50s ease left;
+}
+ .list-hover-slide a.is-current:before, .list-hover-slide a:hover:before {
+	 left: 0;
+}
+
+.single-entry {
+  align-self: center;
+  padding-bottom: 70px;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.container-management {
+  max-width: auto;
+  margin-left: 121px;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+/* Eind management Pagina   */
+
+p{
+	font: italic;
+}
+
+.text-info {
+    color: black!important;
+}
+
+#register {
+
+  margin-left: 33px;
+}
+#login{
+
+  margin-left: 33px;
+}
+
+.footer {
+	background-color: #f8f9fa;
+	margin:auto;
+	height: 100px;
+	color: black;
+	text-align: center;
+	padding-top: 30px;
+  width: 75% ;
+}
+
+
+ 
